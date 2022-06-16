@@ -17,4 +17,9 @@ class HomeScreenModel extends ChangeNotifier{
           notifyListeners();
   }
 
+   void decrementCounter() {
+     _counter--;
+     notifyListeners();
+   }
+
 }

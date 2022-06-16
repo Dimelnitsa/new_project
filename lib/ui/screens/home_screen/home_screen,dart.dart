@@ -35,7 +35,7 @@ class MyHomePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FloatingActionButton(
-            onPressed: (){},
+            onPressed: () => context.read<HomeScreenModel>().decrementCounter(),
             tooltip: 'Decrement',
             child: const Icon(Icons.exposure_minus_1),
           ),

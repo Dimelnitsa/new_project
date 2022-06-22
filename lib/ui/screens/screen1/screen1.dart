@@ -1,2 +1,11 @@
-class Screen1{
+import 'package:flutter/material.dart';
+
+class Screen1 extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw UnimplementedError();
+  }
+  
+  
 }

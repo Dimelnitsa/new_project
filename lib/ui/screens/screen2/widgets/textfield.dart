@@ -6,6 +6,8 @@ class TextFieldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return TextField(
+      decoration: InputDecoration(label: Text('Title:')),
+    );
   }
 }

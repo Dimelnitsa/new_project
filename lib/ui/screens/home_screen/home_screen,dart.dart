@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:new_project/ui/screens/home_screen/home_screen_model.dart';
+import 'package:new_project/ui/screens/screen2/screen2.dart';
 import 'package:provider/provider.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -17,7 +17,6 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
@@ -28,6 +27,10 @@ class MyHomePage extends StatelessWidget {
               '$counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            ElevatedButton(
+                onPressed: () => Navigator.push(
+                    context, MaterialPageRoute(builder: (context)=> const Screen2())),
+                child: const Text('Screen2'))
           ],
         ),
       ),
